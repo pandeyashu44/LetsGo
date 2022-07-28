@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+
+/* ########################## html styling ###################### */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+}
+.header {
+  position: relative;
+  height: 98vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/header-image.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* width: 50; */
+}
+html {
+  font-size: 62.5%;
+}
+ul li {
+  list-style: none;
+}
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+/* ####################### utility class ####################### */
+.container {
+  max-width: 1200px;
+  width: 60%;
+  margin: 0 auto;
+}
+.lg-heading {
+  font-size: 35px;
+}
+.md-heading {
+  font-size: 2.2rem;
+}
+.text-red {
+  color: #e63946;
+}
+.text-light {
+  color: #f4f4f4;
+}
+.text-black {
+  color: #333333;
+}
+.text-grey {
+  color: #555555;
+}
+.bg-dark {
+  background-color: #263238;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.btn-primary {
+  background-color: #fff;
+  border-radius: 10em;
+}
+.btn-primary:hover {
+  background-color: #ddd;
+}
+
+.btn-secondary {
+  border: 2px solid #e63946;
+  border-radius: 1.5em;
+  color: #e63946;
+  background: #fff;
+}
+.btn-secondary:hover {
+  background-color: #ddd;
+}
+
+p,
+li {
+  font-size: 1.6rem;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.15em;
+}
+h1,
+h2,
+h3 {
+  margin-bottom: 0.5em;
+  letter-spacing: 0.15em;
+  font-weight: 500;
+}
+
+/* ############################ header styling ################### */
+/* .nav {
+  border: 2px solid white;
+} */
+/* .header .logo,
+.header .nav a {
+  color: white;
+} */
+.nav .navbar .navitem {
+  display: inline-block;
+  padding: 1rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+.nav .logo {
+  float: left;
+}
+.nav .navbar {
+  float: right;
+}
+.nav a {
+  padding-bottom: 0.3rem;
+}
+.nav a:hover {
+  border-bottom: 1px solid #fff;
+}
+.nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ###########################header content styling ################################ */
+
+.header-content {
+  position: absolute;
+  /* border: 2px solid #fff; */
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+.header-content {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.header-content p {
+  text-transform: uppercase;
+}
+
+/* ####################### Showcase header styling ################################ */
+.showcase {
+  background: #ddd;
+  padding: 10rem 0;
+}
+.row {
+  height: 350px;
+  /* border: 2px solid red; */
+  background: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.319);
+}
+.row1 {
+  margin-bottom: 10rem;
+}
+.row1 .img-box,
+.row2 .text-box {
+  float: left;
+  width: 50%;
+}
+.row2 .img-box,
+.row1 .text-box {
+  float: right;
+  width: 50%;
+}
+.row .img-box {
+  /* border: 6px solid green; */
+  height: 100%;
+}
+.row .text-box {
+  /* border: 2px solid rgb(0, 2, 128); */
+  padding: 3rem;
+}
+
+.row .img-box img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ################################### feature section styling ################################ */
+.features {
+  padding: 10rem 0;
+}
+.box-wrapper {
+  /* border: 2px solid green; */
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.319);
+}
+.box {
+  width: 33.3%;
+  float: left;
+  /* border: 2px solid black; */
+  padding-left: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+.box-1,
+.box-3 {
+  background-color: #263238;
+  color: #ddd;
+}
+.box-2 {
+  background-color: #fc5e46;
+  color: white;
+}
+
+.box-wrapper::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* ############################# footer styling section ############################## */
+.footer {
+  /* border: 2px solid blue; */
+  text-align: center;
+  background-color: #263238;
+  color: white;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.socialmedialink i {
+  margin-left: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/* ############################ about styling ########################### */
+.about {
+  padding: 5rem 0;
+}
+/* .aboutus {
+  border-bottom: 6px solid #e63946;
+} 
+*/
+.aboutus::after {
+  content: "";
+  display: block;
+  border: 3px solid #e63946;
+  width: 100%;
+}
+.go {
+  /* border: 2px solid black; */
+  text-align: center;
+  margin-top: 2rem;
+}
+.go .left {
+  float: left;
+  width: 50%;
+}
+.go .right {
+  float: right;
+  width: 50%;
+}
+.go::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.go li::before {
+  content: "\2713";
+  color: #e63946;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+.count {
+  margin-top: 3rem;
+  /* border: solid blue; */
+}
+.count-item {
+  float: left;
+  /* border: 2px solid #e63946; */
+  text-align: center;
+  width: 25%;
+}
+.count::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.count-item ::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.count-item span {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #e63946;
+}
+.count-item p {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #263238;
+}
+/* ################ about contact button styling ################### */
+
+.new {
+  /* border: 4px solid green; */
+  margin-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #ec616d;
+}
+.new .new-left {
+  float: left;
+  margin-top: 2rem;
+  padding-left: 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+.new .new-right {
+  float: right;
+  width: 40%;
+  text-align: right;
+  padding-right: 1rem;
+}
+.btn-new {
+  text-align: center;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+  border: 4px solid white;
+  padding: 0.3em 2.5em;
+  letter-spacing: 0.5rem;
+  color: #f4f4f4;
+}
+.new::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ################# contact page styling ################## */
+.contact-form {
+  padding: 5rem 0;
+  background: #f7f7f7;
+}
+.form-wrapper {
+  margin-top: 5rem;
+}
+.form-wrapper::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.form-wrapper .company-address {
+  background: #fff;
+  height: 760px;
+  float: left;
+  width: 49%;
+  padding: 1rem;
+}
+.form-wrapper .company-address i {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.form-wrapper .company-address h2 {
+  display: inline-block;
+  text-transform: uppercase;
+}
+.form-wrapper .address-group {
+  margin-bottom: 5rem;
+}
+.form-wrapper .company-address img {
+  min-width: 95%;
+  max-height: 40rem;
+  object-fit: cover;
+  object-position: right;
+  margin-top: 1.5rem;
+}
+
+/* ########################### form styling ###################### */
+
+.form-wrapper .company-form {
+  height: 760px;
+  font-size: 1.6rem;
+  background: #fff;
+  float: right;
+  padding: 1rem;
+  width: 49%;
+}
+.company-form h1::after {
+  content: "";
+  display: block;
+  border: 3px solid #ee4758;
+  width: 100%;
+}
+
+.form-wrapper .company-form label {
+  display: block;
+}
+.form-wrapper .company-form input {
+  width: 100%;
+}
+.form-wrapper .company-form .form-group {
+  margin-bottom: 1rem;
+}
+.form-wrapper .company-form label::after {
+  content: "* ";
+  color: #e63946;
+}
+.form-wrapper .company-form textarea {
+  width: 100%;
+  height: 200px;
+  padding: 1rem;
+}
+
+.form-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5em 3em;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  background-color: #e63946;
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
